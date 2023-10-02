@@ -1,0 +1,20 @@
+import useTitle from "../hooks/useTitle";
+
+const Home = () => {
+  useTitle("Home 🏠");
+
+  return (
+    <div className="flex flex-col items-center min-h-screen bg-gray-800 p-4">
+      <h1 className="text-white text-3xl font-bold font-mono text-center mt-4">
+        Marvel App!
+      </h1>
+      <img
+        src="/img/marvel-heroes.jpg"
+        alt="marvel-heroes"
+        className="md:h-6/12 lg:h-2/4 object-cover rounded my-7 shadow-sm shadow-blue-400"
+      />
+    </div>
+  );
+};
+
+export default Home;
