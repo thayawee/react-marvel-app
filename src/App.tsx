@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Switch } from "wouter";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
