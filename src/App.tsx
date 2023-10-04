@@ -6,13 +6,14 @@ import HeroesDetail from "./pages/HeroesDetail";
 
 function App() {
   return (
-    <Navbar>
+    <>
+      <Navbar />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/heroes" component={Heroes} />
         <Route path="/heroes/:heroesName" component={HeroesDetail} />
       </Switch>
-    </Navbar>
+    </>
   );
 }
 
