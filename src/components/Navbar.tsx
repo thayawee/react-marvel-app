@@ -2,7 +2,7 @@ import { useState, FC } from "react";
 import { Link } from "wouter";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar: FC = ({ children }) => {
+const Navbar: FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   return (
@@ -73,8 +73,6 @@ const Navbar: FC = ({ children }) => {
           </div>
         )}
       </nav>
-
-      {children}
     </div>
   );
 };
